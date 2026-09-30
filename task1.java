@@ -3,7 +3,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class task1 {
-    
+
     //Метод создающий массив размером n и заполняющий его рандомными значениями
     public static  int[] createArray(){
         System.out.println("Enter any positive number");
@@ -18,6 +18,7 @@ public class task1 {
 
     //Метод ищущий индекс минимального по модулю числа в массиве
     public static int findAbsInArray(int[] arr){
+        if (arr.length == 0) return -1;
         int answer = 0;
         for (int i = 0; i < arr.length; i++) {
             if(Math.abs(arr[i]) < Math.abs(arr[answer])){ answer = i; }
