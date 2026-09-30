@@ -63,6 +63,7 @@ public class Employee {
         System.out.println("Enter Department");
         Scanner sc = new Scanner(System.in);
         String n = sc.next();
+        sc.close();
     
         double avg = employees.stream()
             .collect(Collectors.filtering(

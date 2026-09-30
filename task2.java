@@ -9,6 +9,7 @@ public class task2 {
         System.out.println("Enter any positive number");
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
+        sc.close();
         List<Double> arr = new ArrayList<>();
         Random rand = new Random();
         for (int i = 0; i < n; i++) { arr.add(rand.nextDouble()); }
