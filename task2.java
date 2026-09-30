@@ -4,7 +4,6 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class task2 {
-    //Метод создающий список размером n и заполняющий его рандомными значениями
     public static  List<Double> createList(){
         System.out.println("Enter any positive number");
         Scanner sc = new Scanner(System.in);
